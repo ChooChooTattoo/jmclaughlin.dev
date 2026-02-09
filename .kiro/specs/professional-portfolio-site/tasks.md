@@ -220,7 +220,7 @@ This implementation plan breaks down the professional portfolio site into discre
   - Test responsive design at multiple breakpoints
   - Ensure all tests pass, ask the user if questions arise
 
-- [-] 14. Deploy to GitHub Pages
+- [x] 14. Deploy to GitHub Pages
   - Push code to GitHub repository
   - Verify GitHub Actions workflow runs successfully
   - Check deployment completes without errors
