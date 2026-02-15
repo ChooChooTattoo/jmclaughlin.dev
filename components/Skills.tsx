@@ -1,6 +1,5 @@
 interface Skill {
   name: string;
-  proficiency?: 'beginner' | 'intermediate' | 'advanced' | 'expert';
 }
 
 interface SkillCategory {
@@ -13,13 +12,6 @@ interface SkillsProps {
 }
 
 export default function Skills({ skillCategories }: SkillsProps) {
-  const proficiencyLabels = {
-    beginner: 'Beginner',
-    intermediate: 'Intermediate',
-    advanced: 'Advanced',
-    expert: 'Expert',
-  };
-
   return (
     <section className="px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:px-12 lg:py-24">
       <div className="mx-auto max-w-6xl w-full">
