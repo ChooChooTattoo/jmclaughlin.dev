@@ -16,11 +16,14 @@ export default function Hero({ headline, valueProposition }: HeroProps): React.J
       </picture>
       <div className="absolute inset-0 z-0 bg-black/45" />
       <div className="relative z-10 mx-auto max-w-4xl text-center w-full">
-        <h1 className="font-display font-light tracking-[0.12em] text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <h1
+          style={{ fontFamily: 'var(--font-satisfy), cursive' }}
+          className="tracking-[0.02em] text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
+        >
           {headline}
         </h1>
-        <div className="mx-auto mt-6 mb-6 h-px w-12 bg-white/35 sm:mt-8 sm:mb-8 sm:w-16" />
-        <p className="font-body text-[0.65rem] font-normal tracking-[0.35em] uppercase text-white/60 sm:text-xs">
+        <div className="mx-auto mt-6 mb-6 h-px w-12 bg-white/30 sm:mt-8 sm:mb-8 sm:w-16" />
+        <p className="font-body text-[0.65rem] tracking-[0.35em] uppercase text-white/60 sm:text-xs">
           {valueProposition}
         </p>
       </div>
