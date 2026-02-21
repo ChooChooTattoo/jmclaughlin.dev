@@ -1,15 +1,15 @@
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Skills from '@/components/Skills';
-import Experience from '@/components/Experience';
-import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home(): React.JSX.Element {
   const siteContent = {
     hero: {
       headline: "Joe McLaughlin",
-      valueProposition: "Engineering leader in Cloud Infrastructure, SRE, and DevOps"
+      valueProposition: "Cloud Infrastructure · Site Reliability · Engineering Leadership"
     },
     about: {
       content: "Engineering leader with over a decade of experience building and scaling infrastructure, security, and platform engineering teams. Currently at Employ, Inc. Previously led Infrastructure & Security at Niche.com, driving cloud transformation, security initiatives, and platform reliability. Passionate about building resilient systems, fostering high-performing teams, and delivering business value through technical excellence."
