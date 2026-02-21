@@ -4,3 +4,4 @@ node_modules
 out
 .DS_Store
 .vscode
+next-env.d.ts
