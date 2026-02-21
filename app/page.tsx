@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 
 export default function Home(): React.JSX.Element {
@@ -61,6 +62,9 @@ export default function Home(): React.JSX.Element {
         }
       ]
     },
+    projects: {
+      placeholder: "Coming Soon"
+    },
     contact: {
       links: [
         { type: "email" as const, label: "Email", url: "mailto:joe.mclaughlin.it@gmail.com" },
@@ -78,8 +82,15 @@ export default function Home(): React.JSX.Element {
       />
       <About content={siteContent.about.content} />
       <Skills skillCategories={siteContent.skills.categories} />
-      <Experience entries={siteContent.experience.entries} />
-      <Contact links={siteContent.contact.links} />
+      <div id="experience">
+        <Experience entries={siteContent.experience.entries} />
+      </div>
+      <div id="projects">
+        <Projects placeholder={siteContent.projects.placeholder} />
+      </div>
+      <div id="contact">
+        <Contact links={siteContent.contact.links} />
+      </div>
     </main>
   );
 }
