@@ -10,6 +10,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-lora), Georgia, serif;
 }
 
 html {
@@ -20,6 +22,6 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-lora), Georgia, serif;
   line-height: 1.6;
 }
