@@ -88,3 +88,9 @@ The `.nojekyll` file in `/public` prevents GitHub Pages from processing the site
 - `next.config.ts` - Static export configuration
 - `public/` - Static assets (images, CNAME, .nojekyll)
 - `scripts/` - Utility scripts for image optimization
+
+## Known Gotchas
+
+### next-env.d.ts
+
+`next-env.d.ts` is auto-managed by Next.js and is gitignored. Running `npm run dev` (Turbopack) and `npm run build` generate different content, so the file must not be committed. It is regenerated automatically by any `next` command, so CI pipelines should run `npm run build` before any typecheck step.

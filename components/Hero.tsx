@@ -3,23 +3,18 @@ interface HeroProps {
   valueProposition: string;
 }
 
-export default function Hero({ headline, valueProposition }: HeroProps) {
+export default function Hero({ headline, valueProposition }: HeroProps): React.JSX.Element {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-12 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
-      {/* Background Image - WebP with JPG fallback */}
       <picture className="absolute inset-0 z-0">
         <source srcSet="/pictured-rocks.webp" type="image/webp" />
-        <img 
-          src="/pictured-rocks.jpg" 
-          alt="" 
+        <img
+          src="/pictured-rocks.jpg"
+          alt=""
           className="w-full h-full object-cover"
         />
       </picture>
-      
-      {/* Dark Overlay for text readability */}
       <div className="absolute inset-0 z-0 bg-black/60" />
-      
-      {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl text-center w-full">
         <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           {headline}

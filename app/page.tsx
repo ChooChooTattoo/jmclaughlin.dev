@@ -4,7 +4,7 @@ import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
   const siteContent = {
     hero: {
       headline: "Joe McLaughlin",
@@ -17,39 +17,19 @@ export default function Home() {
       categories: [
         {
           category: "Cloud & Infrastructure",
-          skills: [
-            { name: "AWS" },
-            { name: "Cloud Architecture" },
-            { name: "Infrastructure as Code" },
-            { name: "Platform Engineering" }
-          ]
+          skills: ["AWS", "Cloud Architecture", "Infrastructure as Code", "Platform Engineering"]
         },
         {
           category: "DevOps & SRE",
-          skills: [
-            { name: "Kubernetes" },
-            { name: "Site Reliability Engineering" },
-            { name: "CI/CD Pipelines" },
-            { name: "Monitoring & Observability" }
-          ]
+          skills: ["Kubernetes", "Site Reliability Engineering", "CI/CD Pipelines", "Monitoring & Observability"]
         },
         {
           category: "Security & Compliance",
-          skills: [
-            { name: "Security Architecture" },
-            { name: "Compliance (SOC 2, GDPR)" },
-            { name: "Incident Response" },
-            { name: "Risk Management" }
-          ]
+          skills: ["Security Architecture", "Compliance (SOC 2, GDPR)", "Incident Response", "Risk Management"]
         },
         {
           category: "Leadership",
-          skills: [
-            { name: "Engineering Management" },
-            { name: "Team Building" },
-            { name: "Strategic Planning" },
-            { name: "Cross-functional Collaboration" }
-          ]
+          skills: ["Engineering Management", "Team Building", "Strategic Planning", "Cross-functional Collaboration"]
         }
       ]
     },
