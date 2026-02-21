@@ -1,17 +1,13 @@
-interface Skill {
-  name: string;
-}
-
 interface SkillCategory {
   category: string;
-  skills: Skill[];
+  skills: string[];
 }
 
 interface SkillsProps {
   skillCategories: SkillCategory[];
 }
 
-export default function Skills({ skillCategories }: SkillsProps) {
+export default function Skills({ skillCategories }: SkillsProps): React.JSX.Element {
   return (
     <section className="px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:px-12 lg:py-24">
       <div className="mx-auto max-w-6xl w-full">
@@ -22,8 +18,8 @@ export default function Skills({ skillCategories }: SkillsProps) {
               <h3 className="text-base font-semibold text-foreground sm:text-lg md:text-xl">{category.category}</h3>
               <ul className="mt-3 space-y-2 sm:mt-4">
                 {category.skills.map((skill) => (
-                  <li key={skill.name} className="text-sm text-foreground/80 sm:text-base">
-                    {skill.name}
+                  <li key={skill} className="text-sm text-foreground/80 sm:text-base">
+                    {skill}
                   </li>
                 ))}
               </ul>
