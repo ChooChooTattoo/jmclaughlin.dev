@@ -78,8 +78,12 @@ export default function Home(): React.JSX.Element {
       />
       <About content={siteContent.about.content} />
       <Skills skillCategories={siteContent.skills.categories} />
-      <Experience entries={siteContent.experience.entries} />
-      <Contact links={siteContent.contact.links} />
+      <div id="experience">
+        <Experience entries={siteContent.experience.entries} />
+      </div>
+      <div id="contact">
+        <Contact links={siteContent.contact.links} />
+      </div>
     </main>
   );
 }
