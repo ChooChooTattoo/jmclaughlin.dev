@@ -17,12 +17,16 @@ const satisfy = Satisfy({
   display: "swap",
 });
 
+const siteTitle = "Joe McLaughlin | Engineering Leader";
+const siteDescription =
+  "Professional portfolio of Joe McLaughlin - Engineering leader specializing in Cloud Infrastructure, SRE, and DevOps";
+
 export const metadata: Metadata = {
-  title: "Joe McLaughlin | Engineering Leader",
-  description: "Professional portfolio of Joe McLaughlin - Engineering leader specializing in Cloud Infrastructure, SRE, and DevOps",
+  title: siteTitle,
+  description: siteDescription,
   openGraph: {
-    title: "Joe McLaughlin | Engineering Leader",
-    description: "Professional portfolio of Joe McLaughlin - Engineering leader specializing in Cloud Infrastructure, SRE, and DevOps",
+    title: siteTitle,
+    description: siteDescription,
     url: "https://jmclaughlin.dev",
     siteName: "Joe McLaughlin Portfolio",
     locale: "en_US",
