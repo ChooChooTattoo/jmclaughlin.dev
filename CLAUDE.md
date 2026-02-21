@@ -94,3 +94,7 @@ The `.nojekyll` file in `/public` prevents GitHub Pages from processing the site
 ### next-env.d.ts
 
 `next-env.d.ts` is auto-managed by Next.js and is gitignored. Running `npm run dev` (Turbopack) and `npm run build` generate different content, so the file must not be committed. It is regenerated automatically by any `next` command, so CI pipelines should run `npm run build` before any typecheck step.
+
+### GitHub Pages Deployment Branch
+
+The deploy workflow is at `.github/workflows/deploy.yml`. GitHub Pages deployments require two changes when the trigger branch changes: (1) the `branches:` list in the workflow YAML, and (2) the allowed branch in **Settings → Environments → github-pages** on GitHub. Both must match or the deploy job will be rejected with a protection rule error.
